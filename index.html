@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Speed Test</h1>
+        <div class="settings">
+            <label for="difficulty">Select Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        <div class="test">
+            <p id="textToType">Click 'Start' to begin the test...</p>
+            <textarea id="userInput" placeholder="Start typing here..." disabled></textarea>
+            <button id="startBtn">Start</button>
+            <button id="stopBtn" disabled>Stop</button>
+            <p id="timerDisplay">Time: 0s</p>
+        </div>
+        <div class="results">
+            <p id="wpmDisplay">WPM: 0</p>
+        </div>
+        <div class="certificate">
+            <label for="userName">Enter your name:</label>
+            <input type="text" id="userName" placeholder="Your Name">
+            <button id="generateCertBtn">Generate Certificate</button>
+        </div>
+        <div id="certificatePopup" class="popup">
+            <div class="popup-content">
+                <span id="closePopup">&times;</span>
+                <div id="certificateDisplay"></div>
+                <button id="downloadCertBtn">Download Certificate</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
